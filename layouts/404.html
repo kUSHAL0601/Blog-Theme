@@ -9,7 +9,7 @@
         <span class="sub header">Don't worry though, click the button below to wake up.</span>
       </h1>
       <p>
-        <button class="ui secondary button" onclick="window.location.href = '{{ .Site.BaseURL }}'">{{ i18n "backToHome" }}</button>
+        <button class="ui secondary button" onclick="window.location.href = '{{ .Site.BaseURL }}'+'/'">{{ i18n "backToHome" }}</button>
       </p>
     {{ else if .Site.Params.dark404 }}
       <h1 class="ui inverted header">
@@ -17,7 +17,7 @@
         <span class="sub header">Don't worry though, click the button below to wake up.</span>
       </h1>
       <p>
-        <button class="ui inverted button" onclick="window.location.href = '{{ .Site.BaseURL }}'">{{ i18n "backToHome" }}</button>
+        <button class="ui inverted button" onclick="window.location.href = '{{ .Site.BaseURL }}'+'/'">{{ i18n "backToHome" }}</button>
       </p>
     {{ else }}
       <h1 class="ui header">
@@ -25,7 +25,7 @@
         <span class="sub header">Don't worry though, click the button below to wake up.</span>
       </h1>
       <p>
-        <button class="ui secondary button" onclick="window.location.href = '{{ .Site.BaseURL }}'">{{ i18n "backToHome" }}</button>
+        <button class="ui secondary button" onclick="window.location.href = '{{ .Site.BaseURL }}'+'/'">{{ i18n "backToHome" }}</button>
       </p>
     {{ end }}
   </div>
